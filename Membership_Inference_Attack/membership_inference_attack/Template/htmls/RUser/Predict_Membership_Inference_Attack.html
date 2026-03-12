@@ -1,0 +1,233 @@
+{% extends 'RUser/design.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 142px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style6 {color: #FF0000}
+.style8 {font-weight: bold}
+.style10 {color: #FFFF00}
+        .style12 {color: #FFFF00; font-weight: bold; }
+        .style13 {
+	color: #FFFF00;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p align="center" class="text-uppercase pull-center style1">PREDICT MEMBERSHIP ATTACK TYPE!!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1004" align="center">
+                                  <tr>
+                                    <td height="44" colspan="4" bgcolor="#FF0000"><div align="center" class="style13">
+                                      <div align="center">ENTER ALL DATASETS DETAILS HERE !!! </div>
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="289" height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10"><br>
+                                    Enter slno</span></strong></div></td>
+                                    <td width="201">
+                                      <div align="center">
+                                        <input type="text" name="slno">
+                                      </div></td>
+                                    <td width="317" bgcolor="#FF0000"><div align="center"><span class="style12">Enter Flow_ID</span></div></td>
+                                    <td width="177">
+                                      <div align="center">
+                                        <input type="text" name="Flow_ID">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Source_IP</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Source_IP">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Source_Port</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Source_Port">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Destination_IP</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Destination_IP">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Destination_Port</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Destination_Port">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Protocol</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Protocol">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Timestamp</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Timestamp" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Flow_Duration</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Flow_Duration">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Total_Fwd_Packets</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Total_Fwd_Packets" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Total_Length_of_Fwd_Packets</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Total_Length_of_Fwd_Packets" type="text" value="">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Fwd_Packet_Length_Max</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Fwd_Packet_Length_Max" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Fwd_Packet_Length_Min</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Fwd_Packet_Length_Min" type="text" value="">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Flow_Bytes_per_second</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Flow_Bytes_per_second" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Flow_Packets_per_second</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Flow_Packets_per_second">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Fwd_Packets_per_second</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Fwd_Packets_per_second" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Min_Packet_Length</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Min_Packet_Length">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Max_Packet_Length</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Max_Packet_Length" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style12">
+                                      <div align="center">Enter Packet_Length_ean</div>
+                                    </div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Packet_Length_ean">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter ACK_Flag_Count</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="ACK_Flag_Count">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FFFFFF"><div align="center"></div></td>
+                                    <td><div align="center"></div></td>
+                                    <td><input name="submit" type="submit" class="style1" value="Predict Membership Attack Type"></td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                               <table height="62" border="5" align="center" bordercolor="#FF00FF">
+
+                    <tr><td width="407" bgcolor="#FFFF00"><div align="center"><strong><span class="style8 style6">MEMBERSHIP ATTACKER TYPE PREDICTION::</span></strong></div></td>
+                      <td width="305" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">------{{objs}} ------ </div></td>
+
+                        </tr>
+
+
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

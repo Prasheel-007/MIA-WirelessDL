@@ -1,0 +1,39 @@
+Membership Inference Attack and Defense for Wireless Signal Classifiers with Deep Learning
+
+Adversarial machine learning,deep learning,membership inference attack,privacy,wireless signal classification,defense.
+
+IEEE Transactions on Mobile Computing,Issue Date:07.February.2022
+
+
+
+Membership_Inference_Attack
+
+
+membership_inference_attack
+
+
+inference_attack_detection
+
+slno
+Flow_ID
+Source_IP
+Source_Port
+Destination_IP
+Destination_Port
+Protocol
+Timestamp
+Flow_Duration
+Total_Fwd_Packets
+Total_Length_of_Fwd_Packets
+Fwd_Packet_Length_Max
+Fwd_Packet_Length_Min
+Flow_Bytes_per_second
+Flow_Packets_per_second
+Fwd_Packets_per_second
+Min_Packet_Length
+Max_Packet_Length
+Packet_Length_ean
+ACK_Flag_Count
+Prediction
+
+            
